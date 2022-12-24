@@ -42,11 +42,13 @@ a {
 }
 
 img {
-    max-width: 30%;
+    max-width: 40%;
 }
 
 h1 a{
     color: var(--accent2-color);
+    font-size: 50px;
+    letter-spacing: 0.05em;
 }
 
 h2 {
@@ -63,10 +65,8 @@ nav a {
     column-gap: 0em;
 }
 
-pre {
-    white-space: pre-line;
-    color: var(--secondary-color);
-    font-family: Helvetica, Arial, sans-serif;
+section {
+    text-align: center;
 }
 
 .checked {
@@ -75,8 +75,25 @@ pre {
 
 .star {
     color: var(--accent1-color);
+    font-size: 20px;
 }
 
 .recipes-list {
     padding: 0em;
+}
+
+.ingredients {
+    text-align: start;
+    line-height: 1.5em;
+}
+
+.instructions {
+    text-align: start;
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        min-width: 100%;
+    }
 }

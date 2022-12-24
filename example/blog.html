@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='/example/articles.js' defer></script>
+    <title>WDD 130 | Book Blog</title>
+    <link rel="stylesheet" href="/example/blog_style.css">
+    <link rel="stylesheet" href="/wdd130/style.css">
+    <nav id="navigation-container">
+        <a href="/wdd130/index.html"><img class="logo" src="/wdd130/images/tm_logo2.png" alt="logo"></a>
+        <p class="title">WDD130 Web Projects</p>
+        <ul>
+          <li><a class="active" href="/wdd130/index.html">Home</a></li>
+          <li><a href="/wdd130/mission/mission.html">Mission</a></li>
+          <li><a href="/wdd130/blog/blog.html">Blog</a></li>
+          <li><a href="/wdd130/credit_card/credit_card.html">Credit Card</a></li>
+          <li><a href="/wdd130/register/register.html">Register</a></li>
+          <li><a href="/wdd130/apod/apod.html">NASA</a></li>
+          <li><a href="https://github.com/trenton15?tab=repositories" target="_blank">GitHub</a></li>
+          <li><a href="/wdd130/about_me/about_me.html">About Me</a></li>
+        </ul>
+      </nav>
+</head>
+<body>
+    <h1>Kids Read For Fun</h1>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Archive</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+        </section>
+        <section class="filter">
+            <p> Filters will go here</p>
+            <form id="filters" method="get">
+                <fieldset>
+                    <legend>Login</legend>
+                    <p>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username"required />
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" minlength="8" />
+                    </p>
+                    <input type="hidden" name="userid" value="1234" />
+                </fieldset>
+                <p>
+                    <label for="sort">Sort</label>
+                    <select id="sort" >
+                        <option>Pick a value</option>
+                        <option value="asc">Ascending</option>
+                        <option value="dsc">Descending</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="tags">Tags</label>
+                    <input type="checkbox" name="tags" id="tags" />
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
