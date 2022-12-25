@@ -50,23 +50,20 @@ const recipes = [
   ];
 
   function recipeTemplate(recipes) {
-    return `<section class="container">
+    return `<section>
         <div class="card">
             <a href="${recipes.link}" target="_blank"><img alt="${recipes.imgAlt}" src=${recipes.imgSrc}></a>
             <h1><a href="${recipes.link}" target="_blank">${recipes.title}</a></h1>
             <p class="star">${recipes.stars}</p>
-            <h2>Ingredients</h2>
-            <pre>${recipes.ingredients}</pre>
-            <h2>Instructions</h2>
-            <pre>${recipes.instructions}</pre>
         </div>
 </section>`
-  }
-  function renderRecipes(){
-    const htmlRecipes = recipes.map(recipeTemplate);
-    const newUl = document.createElement('ul');
-    newUl.classList.add('recipes-list');
-    newUl.insertAdjacentHTML('afterbegin', htmlRecipes.join(''));
-    document.querySelector('main').insertAdjacentElement('beforeend', newUl);
-  }
-  renderRecipes()
+}
+function renderRecipes(){
+  const htmlRecipes = recipes.map(recipeTemplate);
+  const newUl = document.createElement('ul');
+  newUl.classList.add('recipes-list');
+  newUl.insertAdjacentHTML('afterbegin', htmlRecipes.join(''));
+  document.querySelector('main').insertAdjacentElement('beforeend', newUl);
+}
+
+renderRecipes()

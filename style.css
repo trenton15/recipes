@@ -30,6 +30,10 @@ body {
     font-family: var(--paragraph-font)
 }
 
+main {
+    height: 100%;
+}
+
 p {
     color:var(--secondary-color);
     font-family: Helvetica, Arial, sans-serif;
@@ -42,7 +46,8 @@ a {
 }
 
 img {
-    max-width: 30%;
+    max-width: 100%;
+    border-radius: 0.5em;
 }
 
 h1 a{
@@ -69,6 +74,14 @@ pre {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+ul {
+    columns: 2;
+}
+
+section {
+    text-align: center;
+}
+
 .checked {
     color: var(--secondary-color);
   }
@@ -79,4 +92,11 @@ pre {
 
 .recipes-list {
     padding: 0em;
+}
+
+.card {
+    align-self: center;
+    width: 50%;
+    border: .5em black solid;
+    border-radius: 1em;
 }
