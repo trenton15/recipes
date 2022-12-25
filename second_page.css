@@ -83,17 +83,21 @@ section {
 }
 
 .ingredients {
-    text-align: start;
     line-height: 1.5em;
 }
 
 .instructions {
-    text-align: start;
     line-height: 1.5em;
 }
 
 @media screen and (max-width: 600px) {
     img {
         min-width: 100%;
+    }
+    .ingredients {
+        text-align: start;
+    }
+    .instructions {
+        text-align: start;
     }
 }
