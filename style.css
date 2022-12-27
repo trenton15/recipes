@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Fira+Sans&display=swap');
+
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #525970;
@@ -6,8 +9,8 @@
     --accent2-color: white;
 
     /* change the values below to your chosen font(s) */
-    --heading-font: Helvetica, Arial, sans-serif;
-    --paragraph-font: Helvetica, Arial, sans-serif;
+    --heading-font: 'Fira Sans', sans-serif;
+    --paragraph-font: 'Amiko', sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
     --headline-color-on-white: var(
@@ -27,7 +30,6 @@
 
 body {
     background-color: var(--primary-color);
-    font-family: var(--paragraph-font)
 }
 
 main {
@@ -36,36 +38,28 @@ main {
 
 p {
     color:var(--secondary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--paragraph-font)
 }
 
 a {
     text-decoration: none;
     color: var(--secondary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--paragraph-font)
 }
 
 img {
     max-width: 100%;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 h1 a{
     color: var(--accent2-color);
+    font-family: var(--heading-font);
 }
 
 h2 {
     color: var(--accent2-color);
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 20px;
-}
-
-nav a {
-    column-gap: 0em;
+    font-family: var(--heading-font);
 }
 
 pre {
@@ -75,11 +69,14 @@ pre {
 }
 
 ul {
-    columns: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0em;
 }
 
-section {
-    text-align: center;
+.logo {
+    margin-bottom: 2em;
+    width: 20%;
 }
 
 .checked {
@@ -92,11 +89,30 @@ section {
 
 .recipes-list {
     padding: 0em;
+    align-self: center;
 }
 
 .card {
-    align-self: center;
     width: 50%;
-    border: .5em black solid;
+    border: .01em var(--accent2-color) solid;
     border-radius: 1em;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+    ul {
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        width: 70%;
+        margin-bottom: 0.5em;
+    }
+    .card {
+        width: 80%;
+    }
 }
