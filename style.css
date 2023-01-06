@@ -70,7 +70,7 @@ pre {
 
 ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0em;
 }
 
@@ -93,7 +93,7 @@ ul {
 }
 
 .card {
-    width: 50%;
+    width: 65%;
     border: .01em var(--accent2-color) solid;
     border-radius: 1em;
     justify-self: center;
