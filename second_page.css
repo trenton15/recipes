@@ -95,6 +95,10 @@ div {
     img {
         width: 100%;
     }
+    p {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
     .logo {
         width: 70%;
     }
